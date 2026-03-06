@@ -64,6 +64,11 @@ async function bootstrap() {
   // await app.listen(PORT, () => {
   //   console.log(`🚀 Server is running on port ${PORT}`);
   // });
+  // Redirect root to Swagger UI
+  app.getHttpAdapter().get('/', (req: any, res: any) => {
+    res.redirect('/api');
+  });
+
   const PORT = process.env.PORT || 8000;
   await app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 Server is running on port ${PORT}`);
