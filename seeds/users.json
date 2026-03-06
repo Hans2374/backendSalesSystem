@@ -1,0 +1,80 @@
+[
+  {
+    "_id": { "$oid": "69aab8879e37cdde54758041" },
+    "email": "user@salestore.com",
+    "password": "$2b$10$c/r8olEVaxOMl8Uo3yR3jOf5yP4Ub8./Vk1KmShlEWo9JPY3lVxTm",
+    "name": "Nguyen Van A",
+    "phone": "0901234567",
+    "gender": "Male",
+    "address": "123 Le Loi, District 1, Ho Chi Minh City",
+    "roleId": { "$oid": "69aab8879e37cdde5475803e" },
+    "avatar": "",
+    "skin": "",
+    "carts": [],
+    "favoriteItems": [],
+    "refreshToken": "",
+    "isDeleted": false,
+    "createdBy": {
+      "_id": { "$oid": "69aab8879e37cdde54758043" },
+      "email": "admin@salestore.com"
+    },
+    "updatedBy": {
+      "_id": { "$oid": "69aab8879e37cdde54758043" },
+      "email": "admin@salestore.com"
+    },
+    "createdAt": { "$date": "2026-03-04T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-03-04T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69aab8879e37cdde54758042" },
+    "email": "staff@salestore.com",
+    "password": "$2b$10$c/r8olEVaxOMl8Uo3yR3jORX2r73pn7prNj1bXGoEdwoBmNQY6.BG",
+    "name": "Tran Thi B",
+    "phone": "0912345678",
+    "gender": "Female",
+    "address": "456 Nguyen Hue, District 1, Ho Chi Minh City",
+    "roleId": { "$oid": "69aab8879e37cdde5475803f" },
+    "avatar": "",
+    "skin": "",
+    "carts": [],
+    "favoriteItems": [],
+    "refreshToken": "",
+    "isDeleted": false,
+    "createdBy": {
+      "_id": { "$oid": "69aab8879e37cdde54758043" },
+      "email": "admin@salestore.com"
+    },
+    "updatedBy": {
+      "_id": { "$oid": "69aab8879e37cdde54758043" },
+      "email": "admin@salestore.com"
+    },
+    "createdAt": { "$date": "2026-03-04T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-03-04T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69aab8879e37cdde54758043" },
+    "email": "admin@salestore.com",
+    "password": "$2b$10$c/r8olEVaxOMl8Uo3yR3jOera6qNqhCdZRds5qw3/nd9ypOEN81se",
+    "name": "Le Van C",
+    "phone": "0923456789",
+    "gender": "Male",
+    "address": "789 Dong Khoi, District 1, Ho Chi Minh City",
+    "roleId": { "$oid": "69aab8879e37cdde54758040" },
+    "avatar": "",
+    "skin": "",
+    "carts": [],
+    "favoriteItems": [],
+    "refreshToken": "",
+    "isDeleted": false,
+    "createdBy": {
+      "_id": { "$oid": "69aab8879e37cdde54758043" },
+      "email": "admin@salestore.com"
+    },
+    "updatedBy": {
+      "_id": { "$oid": "69aab8879e37cdde54758043" },
+      "email": "admin@salestore.com"
+    },
+    "createdAt": { "$date": "2026-03-04T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-03-04T00:00:00.000Z" }
+  }
+]

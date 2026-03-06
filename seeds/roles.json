@@ -1,0 +1,29 @@
+[
+  {
+    "_id": { "$oid": "69aab8879e37cdde5475803e" },
+    "name": "USER",
+    "description": "Regular customer who can browse products, manage cart, and place orders",
+    "permissions": [],
+    "isDeleted": false,
+    "createdAt": { "$date": "2026-03-04T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-03-04T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69aab8879e37cdde5475803f" },
+    "name": "STAFF",
+    "description": "Staff member who can manage products, orders, and view reports",
+    "permissions": [],
+    "isDeleted": false,
+    "createdAt": { "$date": "2026-03-04T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-03-04T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "69aab8879e37cdde54758040" },
+    "name": "ADMIN",
+    "description": "Administrator/Manager with full system access",
+    "permissions": [],
+    "isDeleted": false,
+    "createdAt": { "$date": "2026-03-04T00:00:00.000Z" },
+    "updatedAt": { "$date": "2026-03-04T00:00:00.000Z" }
+  }
+]
