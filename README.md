@@ -17,7 +17,7 @@ A full-featured RESTful API for a skincare e-commerce platform built with NestJS
 
 ## Frontend
 
-- **Github**: [Link](https://github.com/trikmgithub/frontendSalesSystem)
+- **Github**: [Link](https://github.com/Hans2374/frontendSalesSystem)
 
 ## Features
 
@@ -141,7 +141,7 @@ PAYOS_CHECKSUM_KEY=your-payos-checksum-key
 
 # Frontend URLs
 FRONTEND_LOCAL_URI=http://localhost:3000
-FRONTEND_GLOBAL_URI=https://your-production-frontend.com
+FRONTEND_GLOBAL_URI=https://frontend-sales-system.vercel.app/
 
 # Default Role
 DEFAULT_ROLE=USER
@@ -211,7 +211,7 @@ Swagger UI documentation is available at `http://localhost:8000/api` when the ap
 
 ## 📝 Backend
 
--   Azure: https://mybeautyskinapp.azurewebsites.net/api
+-   Render: https://backendsalessystem-dnuz.onrender.com/api
 -   Local: http://localhost:8000/
 
 ## 🙏 Acknowledgments
