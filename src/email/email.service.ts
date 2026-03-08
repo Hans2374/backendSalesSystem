@@ -1,5 +1,6 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { MailerService } from '@nestjs-modules/mailer';
+import { ConfigService } from '@nestjs/config';
 import { UsersService } from 'src/users/users.service';
 import { CartService } from 'src/cart/cart.service';
 
@@ -9,9 +10,21 @@ export class EmailService {
 
   constructor(
     private readonly mailerService: MailerService,
+    private readonly configService: ConfigService,
     private readonly userService: UsersService,
     private readonly cartService: CartService,
   ) {}
+
+  private ensureEmailConfigured() {
+    if (
+      !this.configService.get<string>('EMAIL_USER') ||
+      !this.configService.get<string>('EMAIL_PASS')
+    ) {
+      throw new BadRequestException(
+        'Email service is not configured. Please set EMAIL_USER and EMAIL_PASS.',
+      );
+    }
+  }
 
   // Tạo mã OTP 6 chữ số
   generateOTP(): string {
@@ -26,6 +39,7 @@ export class EmailService {
 
   // Gửi OTP qua email
   async sendOTP(email: string) {
+    this.ensureEmailConfigured();
     const isExisted = await this.userService.findOneByEmail(email);
 
     if (isExisted) {
@@ -50,6 +64,7 @@ export class EmailService {
 
   // Gửi OTP qua email
   async sendOtpForgetPassword(email: string) {
+    this.ensureEmailConfigured();
     const isExisted = await this.userService.findOneByEmail(email);
 
     if (!isExisted) {
@@ -83,6 +98,7 @@ export class EmailService {
   }
 
   async sendInvoiceEmail(email: string, cartId: string) {
+    this.ensureEmailConfigured();
     try {
       // Generate PDF buffer in memory instead of directly piping to response
       const pdfBuffer = await this.generateInvoicePDF(cartId);
